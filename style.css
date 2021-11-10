@@ -1,0 +1,14 @@
+header {
+    display:flex;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+body {
+    font-family: halvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
