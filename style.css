@@ -1,10 +1,5 @@
-header {
-    display:flex;
-    height: 69px;
-    border-bottom: 1px solid seashell;
-}
-
 body {
+    margin: 0 auto;
     font-family: halvetica;
     font-size: 22px;
     color: seashell;
@@ -12,3 +7,59 @@ body {
     opacity: 0.9;
     text-align: center;
 }
+
+header {
+    /* display: flex; */
+    background-color: black;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+  }
+
+main {
+    position: relative;
+    top: 70px;
+    overflow: auto;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our-mission {
+    width: 1200px;
+    height: 700px;
+    background-image: url('./resources/img/img-mission-background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-mission-text {
+    background-color: black;
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.our-mission-text h2, h4 {
+    margin: 15px auto;
+}
+
+
+
+.tea-of-the-month {
+    width: 1000px;
+}
+
