@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-family: halvetica;
+    font-family: Helvetica;
     font-size: 22px;
     color: seashell;
     background-color: black;
@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     height: 69px;
     border-bottom: 1px solid seashell;
@@ -18,10 +19,21 @@ header {
     z-index: 3;
 }
 
+header img {
+    height: 50px;
+    margin: 10px;
+}
+
+
 li {
+    margin: 0 10px;
     list-style: none;
     display: inline-block;
   }
+
+li a {
+    color: seashell;
+}
 
 main {
     position: relative;
@@ -38,6 +50,7 @@ article {
 .our-mission {
     width: 1200px;
     height: 700px;
+    margin-bottom: 4rem;
     background-image: url('./resources/img/img-mission-background.jpg');
     background-size: cover;
     display: flex;
@@ -48,18 +61,73 @@ article {
 .our-mission-text {
     background-color: black;
     width: 100%;
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-direction: column; */
+
 }
 
-.our-mission-text h2, h4 {
+h2, h4 {
     margin: 15px auto;
 }
 
-
-
 .tea-of-the-month {
     width: 1000px;
+    /* margin: auto; */
 }
 
+/* .tea-of-the-month h4{
+    margin-bottom: 2rem;
+} */
+
+.gallery {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.img-txt-box img {
+    margin: 0 25px;
+    width: 300px;
+    height: 200px;
+}
+
+.img-txt-box p {
+    margin-top: 10px;
+}
+
+.locations {
+    width: 1200px;
+    height: 600px;
+    margin-top: 3.5rem;
+    background-image: url('./resources/img/img-locations-background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+.contact {
+    height: 200px;
+}
+
+footer {
+    margin: 20px;
+    text-align: left
+}
